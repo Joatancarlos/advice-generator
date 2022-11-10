@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-green: hsl(150, 100%, 66%);
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+
+    background-color: hsl(217, 19%, 24%);
+    width: 35rem;
+    padding: 30px;
+    border-radius: 15px;
+    
+    text-align: center;
+    font-family: 'Manrope';
+}
+
+.main .title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--color-green);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.main #advice {
+    color: hsl(193, 38%, 86%);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.main .btn {
+    --size-btn: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 25px);
+
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-green);
+    width: var(--size-btn);
+    height: var(--size-btn);
+
+    cursor: pointer;
+    transition: ease 200ms;
+}
+
+.main .btn img {
+    width: 20px;
+}
+
+.main .btn:hover {
+    box-shadow: 1px 1px 30px 5px var(--color-green);
+}
+
+
+.main .title,
+.main #advice,
+.main #image {
+    margin-bottom: 20px;
+}
