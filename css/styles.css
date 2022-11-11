@@ -41,7 +41,15 @@ body {
 .main #advice {
     color: hsl(193, 38%, 86%);
     font-weight: 700;
-    font-size: 28px;
+    font-size: 2rem;
+}
+
+.main #image {
+    background-image: url(../images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 20px;
 }
 
 .main .btn {
@@ -77,4 +85,18 @@ body {
 .main #advice,
 .main #image {
     margin-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .main #image {
+        background-image: url(../images/pattern-divider-mobile.svg);
+    }
 }
